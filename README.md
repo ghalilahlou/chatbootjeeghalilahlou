@@ -51,19 +51,7 @@ Données Employés
 - **Maven** installé
 - **Clé API OpenAI** OU **Ollama** installé localement
 
-### Option 1 : Scripts PowerShell (RECOMMANDÉ)
-
-**Terminal 1 - Serveur MCP :**
-```powershell
-.\start-mcp-server.ps1
-```
-
-**Terminal 2 - Chatboot :**
-```powershell
-.\start-chatboot.ps1
-```
-
-### Option 2 : Maven Manuel
+### Démarrage avec Maven
 
 **Terminal 1 - Serveur MCP (port 8989) :**
 ```powershell
@@ -228,9 +216,8 @@ Récupère la liste de tous les employés.
 **Pourquoi ?** IntelliJ détecte `McpServerApplication` mais utilise le classpath de `chatboot` qui contient le client MCP au lieu du serveur MCP.
 
 **Solution** :
-- Utilisez **Maven depuis le terminal PowerShell**
+- Utilisez **Maven depuis le terminal**
 - OU ouvrez `mcp-server` comme projet séparé dans IntelliJ
-- OU utilisez les scripts PowerShell fournis
 
 ## 📚 Technologies Utilisées
 
@@ -258,9 +245,7 @@ chatboot/
 │           └── McpTools.java              # Outils MCP exposés
 │
 ├── pom.xml                                # Dépendances Chatboot
-├── mcp-server/pom.xml                     # Dépendances MCP Server
-├── start-mcp-server.ps1                   # Script démarrage MCP
-└── start-chatboot.ps1                     # Script démarrage Chatboot
+└── mcp-server/pom.xml                     # Dépendances MCP Server
 ```
 
 ## 🎯 Fonctionnalités Clés

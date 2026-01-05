@@ -1,0 +1,6 @@
+org\example\chatboot\telegram\TelegramBot.class
+org\example\chatboot\web\ChatController$ChatResponse.class
+org\example\chatboot\web\ChatController$ChatRequest.class
+org\example\chatboot\web\ChatController.class
+org\example\chatboot\ai\AIAgent.class
+org\example\chatboot\ChatbootApplication.class
